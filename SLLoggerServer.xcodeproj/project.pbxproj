@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		545D517320183CD60013C154 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 545D517220183CD60013C154 /* AppDelegate.m */; };
+		545D517620183CD60013C154 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545D517520183CD60013C154 /* ViewController.m */; };
+		545D517920183CD60013C154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545D517720183CD60013C154 /* Main.storyboard */; };
+		545D517B20183CD60013C154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545D517A20183CD60013C154 /* Assets.xcassets */; };
+		545D517E20183CD60013C154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545D517C20183CD60013C154 /* LaunchScreen.storyboard */; };
+		545D518120183CD60013C154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545D518020183CD60013C154 /* main.m */; };
+		545D518A20183E6C0013C154 /* HTTPServerLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 545D518920183E6C0013C154 /* HTTPServerLogger.m */; };
+		545D518D20183E8F0013C154 /* SLLoggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 545D518C20183E8F0013C154 /* SLLoggerManager.m */; };
+		545D518F2018433A0013C154 /* webBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 545D518E2018433A0013C154 /* webBundle.bundle */; };
+		7F22F5B3B0E0C66562FA1199 /* libPods-SLLoggerServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B695F9C2F7410F188E949DA8 /* libPods-SLLoggerServer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46F4048B2BA6BD4A8A055E93 /* Pods-SLLoggerServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLLoggerServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLLoggerServer/Pods-SLLoggerServer.debug.xcconfig"; sourceTree = "<group>"; };
+		545D516E20183CD60013C154 /* SLLoggerServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLoggerServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545D517120183CD60013C154 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		545D517220183CD60013C154 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		545D517420183CD60013C154 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		545D517520183CD60013C154 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		545D517820183CD60013C154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		545D517A20183CD60013C154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		545D517D20183CD60013C154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		545D517F20183CD60013C154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545D518020183CD60013C154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545D518820183E6C0013C154 /* HTTPServerLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServerLogger.h; sourceTree = "<group>"; };
+		545D518920183E6C0013C154 /* HTTPServerLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServerLogger.m; sourceTree = "<group>"; };
+		545D518B20183E8F0013C154 /* SLLoggerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLoggerManager.h; sourceTree = "<group>"; };
+		545D518C20183E8F0013C154 /* SLLoggerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLoggerManager.m; sourceTree = "<group>"; };
+		545D518E2018433A0013C154 /* webBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = webBundle.bundle; sourceTree = "<group>"; };
+		5F77DF5B65950AEA573B858B /* Pods-SLLoggerServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLLoggerServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLLoggerServer/Pods-SLLoggerServer.release.xcconfig"; sourceTree = "<group>"; };
+		B695F9C2F7410F188E949DA8 /* libPods-SLLoggerServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SLLoggerServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		545D516B20183CD60013C154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F22F5B3B0E0C66562FA1199 /* libPods-SLLoggerServer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F25F4AA8DBB0AA599254B56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B695F9C2F7410F188E949DA8 /* libPods-SLLoggerServer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545D516520183CD60013C154 = {
+			isa = PBXGroup;
+			children = (
+				545D517020183CD60013C154 /* SLLoggerServer */,
+				545D516F20183CD60013C154 /* Products */,
+				CCE89C4420C5DA6A0DA71321 /* Pods */,
+				4F25F4AA8DBB0AA599254B56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		545D516F20183CD60013C154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				545D516E20183CD60013C154 /* SLLoggerServer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		545D517020183CD60013C154 /* SLLoggerServer */ = {
+			isa = PBXGroup;
+			children = (
+				545D518720183E6C0013C154 /* server */,
+				545D517120183CD60013C154 /* AppDelegate.h */,
+				545D517220183CD60013C154 /* AppDelegate.m */,
+				545D517420183CD60013C154 /* ViewController.h */,
+				545D517520183CD60013C154 /* ViewController.m */,
+				545D518B20183E8F0013C154 /* SLLoggerManager.h */,
+				545D518C20183E8F0013C154 /* SLLoggerManager.m */,
+				545D517720183CD60013C154 /* Main.storyboard */,
+				545D517A20183CD60013C154 /* Assets.xcassets */,
+				545D517C20183CD60013C154 /* LaunchScreen.storyboard */,
+				545D517F20183CD60013C154 /* Info.plist */,
+				545D518020183CD60013C154 /* main.m */,
+				545D518E2018433A0013C154 /* webBundle.bundle */,
+			);
+			path = SLLoggerServer;
+			sourceTree = "<group>";
+		};
+		545D518720183E6C0013C154 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				545D518820183E6C0013C154 /* HTTPServerLogger.h */,
+				545D518920183E6C0013C154 /* HTTPServerLogger.m */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		CCE89C4420C5DA6A0DA71321 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46F4048B2BA6BD4A8A055E93 /* Pods-SLLoggerServer.debug.xcconfig */,
+				5F77DF5B65950AEA573B858B /* Pods-SLLoggerServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		545D516D20183CD60013C154 /* SLLoggerServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545D518420183CD60013C154 /* Build configuration list for PBXNativeTarget "SLLoggerServer" */;
+			buildPhases = (
+				B2226AD5358078E3D71CC043 /* [CP] Check Pods Manifest.lock */,
+				545D516A20183CD60013C154 /* Sources */,
+				545D516B20183CD60013C154 /* Frameworks */,
+				545D516C20183CD60013C154 /* Resources */,
+				802B2CA14BC8850AC2ADABDE /* [CP] Embed Pods Frameworks */,
+				3FE2D097CD6AD6A6AB2127E6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLLoggerServer;
+			productName = SLLoggerServer;
+			productReference = 545D516E20183CD60013C154 /* SLLoggerServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		545D516620183CD60013C154 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = shaolie;
+				TargetAttributes = {
+					545D516D20183CD60013C154 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 545D516920183CD60013C154 /* Build configuration list for PBXProject "SLLoggerServer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 545D516520183CD60013C154;
+			productRefGroup = 545D516F20183CD60013C154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				545D516D20183CD60013C154 /* SLLoggerServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		545D516C20183CD60013C154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545D518F2018433A0013C154 /* webBundle.bundle in Resources */,
+				545D517E20183CD60013C154 /* LaunchScreen.storyboard in Resources */,
+				545D517B20183CD60013C154 /* Assets.xcassets in Resources */,
+				545D517920183CD60013C154 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FE2D097CD6AD6A6AB2127E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLLoggerServer/Pods-SLLoggerServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802B2CA14BC8850AC2ADABDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SLLoggerServer/Pods-SLLoggerServer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SLLoggerServer/Pods-SLLoggerServer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2226AD5358078E3D71CC043 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SLLoggerServer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		545D516A20183CD60013C154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545D518A20183E6C0013C154 /* HTTPServerLogger.m in Sources */,
+				545D518D20183E8F0013C154 /* SLLoggerManager.m in Sources */,
+				545D517620183CD60013C154 /* ViewController.m in Sources */,
+				545D518120183CD60013C154 /* main.m in Sources */,
+				545D517320183CD60013C154 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		545D517720183CD60013C154 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545D517820183CD60013C154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		545D517C20183CD60013C154 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545D517D20183CD60013C154 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		545D518220183CD60013C154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		545D518320183CD60013C154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		545D518520183CD60013C154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F4048B2BA6BD4A8A055E93 /* Pods-SLLoggerServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GK89F99M5;
+				INFOPLIST_FILE = SLLoggerServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shaolie.lin.SLLoggerServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		545D518620183CD60013C154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F77DF5B65950AEA573B858B /* Pods-SLLoggerServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GK89F99M5;
+				INFOPLIST_FILE = SLLoggerServer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shaolie.lin.SLLoggerServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		545D516920183CD60013C154 /* Build configuration list for PBXProject "SLLoggerServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545D518220183CD60013C154 /* Debug */,
+				545D518320183CD60013C154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545D518420183CD60013C154 /* Build configuration list for PBXNativeTarget "SLLoggerServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545D518520183CD60013C154 /* Debug */,
+				545D518620183CD60013C154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 545D516620183CD60013C154 /* Project object */;
+}

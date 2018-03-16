@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0aJ-an-mLx"/>
+                        <viewControllerLayoutGuide type="bottom" id="XBo-52-2tf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-xX-VUT">
+                                <rect key="frame" x="173" y="97" width="29" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-v8-ED6">
+                                <rect key="frame" x="241" y="303" width="62" height="30"/>
+                                <state key="normal" title="恢复日志"/>
+                                <connections>
+                                    <action selector="recover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byx-zf-mgZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGU-ag-SJ7">
+                                <rect key="frame" x="72" y="220" width="77" height="30"/>
+                                <state key="normal" title="启动服务器"/>
+                                <connections>
+                                    <action selector="startServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDR-gQ-aig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9y-5j-Vsn">
+                                <rect key="frame" x="72" y="303" width="77" height="30"/>
+                                <state key="normal" title="日志重定向"/>
+                                <connections>
+                                    <action selector="redirect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="px9-Xo-ERw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-op-LEf">
+                                <rect key="frame" x="226" y="220" width="77" height="30"/>
+                                <state key="normal" title="停止服务器"/>
+                                <connections>
+                                    <action selector="stopServer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9r-sH-vEE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="382-kN-aLz">
+                                <rect key="frame" x="156" y="393" width="62" height="30"/>
+                                <state key="normal" title="打印日志"/>
+                                <connections>
+                                    <action selector="onLog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAo-px-qbO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o9y-5j-Vsn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="72" id="1dA-WY-bw2"/>
+                            <constraint firstItem="RGU-ag-SJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="72" id="536-7R-6s3"/>
+                            <constraint firstItem="o9y-5j-Vsn" firstAttribute="top" secondItem="RGU-ag-SJ7" secondAttribute="bottom" constant="53" id="Biy-5k-dZw"/>
+                            <constraint firstItem="pdz-xX-VUT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qzs-hE-dWA"/>
+                            <constraint firstItem="pdz-xX-VUT" firstAttribute="top" secondItem="0aJ-an-mLx" secondAttribute="bottom" constant="77" id="adT-Kh-oPJ"/>
+                            <constraint firstItem="RGU-ag-SJ7" firstAttribute="top" secondItem="0aJ-an-mLx" secondAttribute="bottom" constant="200" id="c6t-Hi-XSQ"/>
+                            <constraint firstItem="382-kN-aLz" firstAttribute="top" secondItem="TBd-v8-ED6" secondAttribute="bottom" constant="60" id="cVX-Q2-mTH"/>
+                            <constraint firstItem="TBd-v8-ED6" firstAttribute="top" secondItem="xB9-op-LEf" secondAttribute="bottom" constant="53" id="dlu-Vd-9AH"/>
+                            <constraint firstAttribute="trailing" secondItem="xB9-op-LEf" secondAttribute="trailing" constant="72" id="ecM-Q6-suW"/>
+                            <constraint firstAttribute="trailing" secondItem="TBd-v8-ED6" secondAttribute="trailing" constant="72" id="ix1-wb-Dy8"/>
+                            <constraint firstItem="xB9-op-LEf" firstAttribute="centerY" secondItem="RGU-ag-SJ7" secondAttribute="centerY" id="lja-tA-92j"/>
+                            <constraint firstItem="382-kN-aLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pGE-U8-d3H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startServerBtn" destination="RGU-ag-SJ7" id="P3w-Q7-AEF"/>
+                        <outlet property="stopServerBtn" destination="xB9-op-LEf" id="JnA-lR-7nz"/>
+                        <outlet property="tipsLabel" destination="pdz-xX-VUT" id="vQS-nJ-fB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+</document>
